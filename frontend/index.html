@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini Chat</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="chat-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/8a/Google_Gemini_logo.svg" alt="Gemini Logo" class="logo">
+
+        <label for="user-input"><strong>Prompt:</strong></label>
+        <textarea id="user-input" placeholder="Type your question here..."></textarea>
+
+        <div class="button-container">
+            <button onclick="sendMessage()">Send</button>
+            <button onclick="clearChat()">Cancel</button>
+        </div>
+
+        <label for="response-box"><strong>Response:</strong></label>
+        <textarea id="response-box" readonly></textarea>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
